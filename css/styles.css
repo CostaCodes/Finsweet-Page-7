@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*Header-Section*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.main-header .logo-section .logo-image img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.main-header .right-section {
+    display: flex;
+}
+
+.right-section .navigation-section {
+    border-right: 3px solid gray;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.navigation-section ul {
+    display: flex;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navigation-section ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-right: 20px;
+}
+
+.navigation-section ul li {
+    list-style: none;
+}
+
+.road-assistance .call-logo {
+    display: flex;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.call-logo .call-image {
+    padding-right: 10px;
+
+}
+
+/* First-Section */
+#first-section {
+    padding-top: 30px;
+}
+
+#first-section .text {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#first-section .text small {
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #939191;
+    opacity: 0.8;
+}
+
+#first-section .text h1 {
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+
+/* Second-Section */
+#second-section {
+    padding: 2rem 18rem;
+}
+
+#second-section .text h2 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+#second-section .text small {
+    padding: 15px 0;
+    color: #939191;
+    opacity: 0.8;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#second-section .text p {
+    border-left: 3px solid gray;
+    padding-left: 20px;
+}
+
+#second-section .image-part {
+    padding: 30px 0;
+}
+
+
+/* Third-Section */
+
+#third-section .main-section {
+    display: flex;
+}
+
+#third-section .main-section {
+    width: 100%;
+}
+
+#third-section .main-section .car-section {
+    width: 28%;
+}
+
+#third-section .main-section .car-section img {
+    height: 100%;
+
+}
+
+#third-section .main-section .text-section {
+    width: 32%;
+    background-color: orangered;
+    color: white;
+    padding: 90px 30px;
+}
+
+#third-section .main-section .text-section p {
+    font-size: 26px;
+}
+
+#third-section .main-section .text-section .btn {
+    padding: 40px 0;
+}
+
+#third-section .main-section .text-section button {
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#third-section .main-section .engine-section {
+    width: 40%;
+}
+
+#third-section .main-section .engine-section img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fourth-Section */
+
+#fourth-section {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 50px 0;
+}
+
+#fourth-section .main-section {
+    display: flex;
+}
+
+#fourth-section .main-section .left-section {
+    width: 45%;
+    padding: 10px;
+}
+
+#fourth-section .main-section .left-section h2 {
+    font-size: 35px;
+    padding-bottom: 40px;
+}
+
+#fourth-section .main-section .left-section .logos {
+    display: flex;
+    padding-top: 50px;
+}
+
+.main-section .left-section .logos img {
+    padding-right: 40px;
+    width: 120%;
+}
+
+#fourth-section .main-section .right-section {
+    width: 45%;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+
+.main-section .right-section .text {
+    padding-bottom: 40px;
+}
+
+.main-section .right-section .text p {
+    line-height: 36px;
+}
+
+.main-section .right-section .text small {
+    font-size: 17px;
+    color: gray;
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    padding: 40px 0;
+}
+
+footer .main-footer {
+    display: flex;
+}
+
+footer .main-footer .logo-section {
+    width: 20%;
+}
+
+footer .main-footer .middle-section {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer .middle-section .navigation-section ul li a{
+    color: white;
+}  
+
+footer .main-footer .last-section {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .main-footer .last-section small {
+    color: gray;
+}
+
+/* Media-Query */
+
+/* Laptop-View */
+@media only screen and (max-width: 1024.99px) {
+    header .main-header {
+        flex-direction: column;
+    }
+
+    .main-header .logo-section .logo-image img {
+        width: 20%;
+    }
+
+    #second-section {
+        padding: 2rem 15rem;
+    }
+
+    footer .main-footer .middle-section {
+        width: 70%;
+        padding-bottom: 5px;
+    }
+
+    footer .main-footer .last-section {
+        width: 15%;
+    }
+
+    .main-footer .middle-section .navigation-section ul li a {
+        font-size: 15px;
+    }
+
+}
+
+/* Tablet-View */
+@media only screen and (max-width: 768.99px) {
+    .road-assistance .call-logo {
+        display: none;
+    }
+
+    .right-section .navigation-section {
+        border-right: none;
+    }
+
+    .navigation-section ul li a {
+        font-size: 17px;
+    }
+
+    #first-section .text {
+        padding: 20px 0;
+    }
+
+    #first-section .text h1 {
+        font-size: 35px;
+    }
+
+    #second-section {
+        padding: 2rem 8rem;
+    }
+
+    #third-section .main-section .car-section img {
+        width: 250%;
+    }
+
+    #third-section .main-section .text-section {
+        padding: 30px;
+    }
+
+    #third-section .main-section .text-section p {
+        font-size: 25px;
+    }
+
+    #fourth-section .main-section .left-section h2 {
+        font-size: 30px;
+    }
+
+    .main-section .right-section .text {
+        padding-bottom: 20px;
+    }
+
+    .main-section .right-section .text p {
+        line-height: 30px;
+    }
+
+    footer .main-footer {
+        flex-direction: column;
+    }
+
+    footer .main-footer .middle-section {
+        width: 100%;
+    }
+
+    .main-footer .middle-section .navigation-section ul li a {
+        font-size: 17px;
+        padding-top: 4px;
+    }
+
+    footer .main-footer .last-section {
+        width: 100%;
+        padding-top: 8px;
+    }
+}
+
+/* Mobile-View */
+@media only screen and (max-width: 425.99px) {
+    .main-header .logo-section .logo-image img {
+        width: 50%;
+    }
+
+    .main-header .right-section {
+        flex-direction: column;
+    }
+
+    .navigation-section ul {
+        flex-direction: column;
+    }
+
+    .main-header .right-section {
+        padding-bottom: 50px;
+    }
+
+    #first-section {
+        padding-top: 90px;
+    }
+
+    .navigation-section ul li a {
+        padding-bottom: 3px;
+    }
+
+    #first-section .text h1 {
+        font-size: 25px;
+    }
+
+    #first-section .text small {
+        font-size: 15px;
+    }
+
+    #second-section {
+        padding: 1rem 0;
+    }
+
+    #second-section .text h2 {
+        font-size: 25px;
+    }
+
+    #third-section .main-section {
+        flex-direction: column;
+    }
+
+    #third-section .main-section .car-section {
+        width: 100%;
+        background-color: orangered;
+    }
+
+    #third-section .main-section .car-section img {
+        width: 100%;
+    }
+
+    #third-section .main-section .text-section {
+        width: 100%;
+    }
+
+    #third-section .main-section .text-section .btn {
+        padding: 25px 0;
+    }
+
+    #third-section .main-section .engine-section {
+        width: 100%;
+        background-color: black;
+    }
+
+    #fourth-section .main-section {
+        flex-direction: column;
+    }
+
+    #fourth-section .main-section .left-section {
+        width: 100%;
+        padding: 0;
+        padding-top: 30px;
+        order: 2;
+        border-top: 2px solid gray;
+    }
+
+    #fourth-section .main-section .right-section {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    footer .main-footer .middle-section {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .main-footer .middle-section .navigation-section ul li a {
+        padding-top: 2px;
+    }
+
+    footer .main-footer .last-section {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+}
